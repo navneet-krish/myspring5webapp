@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Trying to become Guru</title>
+</head>
+<body>
+<h1>Book List</h1>
+
+<table>
+	<tr>
+	 	<th>ID</th>
+	 	<th>Book ISBN</th>
+	 	<th>Book Name</th>
+	 	<th>Publisher Name</th>
+	</tr>
+	
+	<tr th:each="bookie : ${books}">
+	 	
+	 	<th th:text="${bookie.isbn}">Navneet</th>
+	 	<th th:text="${bookie.title}">Sharma</th>
+        
+	</tr>
+
+</table>
+</body>
+</html>
